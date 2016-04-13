@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.queenbeandroid"
+    android:screenOrientation="landscape"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <supports-screens android:anyDensity="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logonqueenbe"
+        android:label="QueenbeSmart"
+        android:theme="@style/AppTheme" >
+        <!-- MyTheme -->
+        <activity
+            android:name="com.example.queenbeandroid.DangNhapActivity"
+            android:label="QueenbeSmart"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.queenbeandroid.DanhMucActivity"
+            android:label="Hệ thống danh mục"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.queenbeandroid.BanHangActivity"
+            android:label="Thu ngân bán lẻ"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.queenbeandroid.DMBanActivity"
+            android:label="Hệ thống bàn ăn"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.queenbeandroid.MainActivity"
+            android:label="Menu hệ thống"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.queenbeandroid.SL_DGActivity"
+            android:label="@string/title_activity_sl__dg" >
+        </activity>
+        <activity
+            android:name="com.example.queenbeandroid.ThanhToanActivity"
+            android:label="@string/title_activity_thanh_toan" >
+        </activity>
+        <activity
+            android:name="com.example.queenbeandroid.BanLeActivity"
+            android:label="Bán le"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+    
+
+</manifest>
